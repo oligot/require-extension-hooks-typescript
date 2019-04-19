@@ -1,6 +1,6 @@
 {
 	"name": "require-extension-hooks-typescript",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Node.js require extension hook for TypeScript",
 	"license": "MIT",
 	"repository": "oligot/require-extension-hooks-typescript",
