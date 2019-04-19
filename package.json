@@ -1,0 +1,48 @@
+{
+	"name": "require-extension-hooks-typescript",
+	"version": "0.0.0",
+	"description": "Node.js require extension hook for TypeScript",
+	"license": "MIT",
+	"repository": "oligot/require-extension-hooks-typescript",
+	"author": {
+		"name": "Olivier Ligot",
+		"email": "oligot@protonmail.com",
+		"url": "oligot.be"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "eslint --cache --format=pretty index.js test && ava"
+	},
+	"eslintConfig": {
+		"extends": [
+			"xo",
+			"plugin:unicorn/recommended"
+		]
+	},
+	"ava": {
+		"require": [
+			"./test/_require.js"
+		]
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		""
+	],
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"eslint": "^5.16.0",
+		"eslint-config-xo": "^0.26.0",
+		"eslint-formatter-pretty": "^2.1.1",
+		"eslint-plugin-unicorn": "^8.0.2",
+		"require-extension-hooks": "^0.3.3",
+		"typescript": "^3.4.4"
+	},
+	"peerDependencies": {
+		"require-extension-hooks": "^0.3.3",
+		"typescript": "3.x"
+	}
+}
